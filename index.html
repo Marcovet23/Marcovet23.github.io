@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description"
+          content="Sono Alberto Campini laureato magistrale in Intelligenza Artificale, co-fondatore di ABC Labs e dipendente presso Reply">
+
+    <meta name="author" content="Alberto Campini">
+
+    <meta name="keywords" content="Portfolio, Web-design, Css">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="hsl(230, 60%, 99%)">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="hsl(230, 28%, 12%)">
+
+    <meta name="image" property="og:image" content="img/image-overview-EN.jpg">
+    <meta property="og:type" content="Portfolio">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+    <!--==================== FAVICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="js/manifest.json">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toasty.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+
+    <title>Alberto Campini | Portfolio</title>
+</head>
+
+<body>
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+
+    <nav class="nav container">
+        <a href='#' onclick="changeColor(Math.random() * (359))" class="nav__logo">Alberto</a>
+        <div class="nav__menu-color" id="nav-menu-color">
+            <div>
+                <input type="range" id="color-slider" class="slider" oninput="changeColor(this.value)" min="0"
+                       max="359" value="230">
+            </div>
+            <i class="uil uil-times nav__close nav__icon" id="nav-close-color"></i>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class="uil uil-estate nav__icon"></i>
+                        <span id="home-txt">
+
+                            </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class="uil uil-user nav__icon"></i>
+                        <span id="about-txt">
+
+                            </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class="uil uil-file-alt nav__icon"></i>
+                        <span id="skills-txt">
+
+                            </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#qualification" class="nav__link">
+                        <i class="uil uil-graduation-cap nav__icon"></i>
+                        <span id="qualification-txt">
+
+                            </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class="uil uil-briefcase-alt nav__icon"></i>
+                        <span id="projects-txt">
+
+                            </span>
+                    </a>
+                </li>
+
+                <li class="nav__item nav__change-language change-language">
+                    <a class="nav__link">
+                        <i class="uil uil-english-to-chinese nav__icon"></i>
+                        <span id="language-txt"></span>
+                    </a>
+                </li>
+
+
+            </ul>
+            <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+            <div class="nav__toggle" id="nav-toggle-color">
+                <i class="uil uil-palette change-color"></i>
+            </div>
+
+            <i class="uil uil-english-to-chinese change-language change-language-topbar"></i>
+            <audio id="audio-change-language" src="sounds/info/1.mp3"></audio>
+            <i class="uil uil-volume change-volume change-volume-topbar" id="change-volume-topbar"></i>
+            <audio id="audio-change-volume" src="sounds/info/2.mp3"></audio>
+            <i class="uil uil-moon change-theme" id=theme-button></i>
+            <audio id="audio-switch-on" src="sounds/switch/switch-on.mp3"></audio>
+            <audio id="audio-switch-off" src="sounds/switch/switch-off.mp3"></audio>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps nav__icon"></i>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<!--==================== MAIN ====================-->
+<main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__content grid">
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/alberto-campini-a20258211/" target="_blank" rel="noopener"
+                       class="home__social-icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://twitter.com/AlbVx_" rel="noopener" target="_blank" class="home__social-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/albvx/" rel="noopener" target="_blank" class="home__social-icon">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://github.com/AlbertoCampini" rel="noopener" target="_blank"
+                       class="home__social-icon">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+
+                <div class="home__img">
+
+                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        </mask>
+
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            <image class="home__blob-img" href="img/propic.jpg"/>
+                        </g>
+                    </svg>
+
+                </div>
+
+                <div class="home__data">
+                    <h1 id="home-title-txt" class="home__title"></h1>
+                    <h2 id="home-subtitle-txt" class="home__subtitle"></h2>
+                    <p id="home-description-txt" class="home__description"></p>
+                    <a href="#contactme" class="button home__button button--flex">
+                            <span id="contactme-txt">
+
+                            </span> <i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                    <span class="home__scroll-name">
+                            <span id="scroll-txt">
+
+                            </span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+        <h2 class="section__title">
+                <span id="about-section__title-txt">
+                </span>
+        </h2>
+
+        <span class="section__subtitle">
+                <span id="about-section__subtitle-txt">
+
+                </span>
+            </span>
+        <div class="about__container container grid">
+
+            <img src="img/about.jpg" alt="about image" class="about__img">
+
+
+            <div class="about__data">
+                <p class="about__description" id="about__description-txt">
+                </p>
+
+                <div class="about__info">
+                    <div class="about__info__content">
+                        <span id="about__info-experience-number-txt" class="about__info-title"></span>
+                        <span id="about__info-experience-txt" class="about__info-name"></span>
+                    </div>
+                    <div class="about__info__content">
+                        <span class="about__info-title">10+</span>
+                        <span id="about__info-project-txt" class="about__info-name"></span>
+                    </div>
+                    <div class="about__info__content">
+                        <span class="about__info-title">2</span>
+                        <span id="about__info-companies-txt" class="about__info-name"></span>
+                    </div>
+
+                </div>
+
+                <div class="about__buttons">
+                    <a download="" href="pdf/CV_2023.pdf" class="button button--flex">
+                        <span id="about__buttons-txt"></span>
+                        <i class="uil uil-download-alt button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+        <h2 class="section__title">
+            <span id="skills-section__title-txt"></span>
+        </h2>
+
+        <span class="section__subtitle">
+                <span id="skills-section__subtitle-txt">
+
+                </span>
+            </span>
+        <div class="skills__container container grid">
+
+
+            <div class="skills__content skills__close">
+                <div class="skills__header">
+                    <i class="uil uil-brain skills__icon"></i>
+                    <div>
+                        <h1 class="skills__title">AI developer</h1>
+                        <span class="skills__subtitle">
+                                <span id="AI-skills__subtitle-txt">
+                                </span>
+                            </span>
+
+
+                    </div>
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Python</h2>
+                            <span class="skills__number">90%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__90"></span>
+                        </div>
+                    </div>
+
+
+                    <!--<div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Prolog</h2>
+                            <span class="skills__number">80%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__80"></span>
+                        </div>
+                    </div>-->
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Open AI Service</h2>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Prompting on LLM</h2>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Azure Cognitive Search</h2>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <!--<div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Clingo</h2>
+                            <span class="skills__number">60%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__60"></span>
+                        </div>
+                    </div>
+
+
+                     <div class="skills__data">
+                         <div class="skills__titles">
+                             <h2 class="skills__name">NodeJS</h2>
+                             <span class="skills__number">60%</span>
+                         </div>
+                         <div class="skills__bar">
+                             <span class="skills__percentage skills__angular"></span>
+                         </div>
+                     </div>
+                 </div> -->
+
+                </div>
+            </div>
+            <div class="skills__content skills__close">
+                <div class="skills__header">
+                    <i class="uil uil-puzzle-piece skills__icon"></i>
+                    <div>
+                        <h1 class="skills__title">BI developer</h1>
+                        <span class="skills__subtitle">
+                                <span id="BI-skills__subtitle-txt">
+                                </span>
+                            </span>
+
+
+                    </div>
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Power BI</h2>
+                            <span class="skills__number">95%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__95"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">DAX</h2>
+                            <span class="skills__number">90%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__90"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Power Query</h2>
+                            <span class="skills__number">80%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__80"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Tabular</h2>
+                            <span class="skills__number">80%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__75"></span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="skills__data">
+                         <div class="skills__titles">
+                             <h2 class="skills__name"></h2>
+                             <span class="skills__number">90%</span>
+                         </div>
+                         <div class="skills__bar">
+                             <span class="skills__percentage skills__css"></span>
+                         </div>
+                     </div>
+
+
+                     <div class="skills__data">
+                         <div class="skills__titles">
+                             <h2 class="skills__name">C#</h2>
+                             <span class="skills__number">90%</span>
+                         </div>
+                         <div class="skills__bar">
+                             <span class="skills__percentage skills__js"></span>
+                         </div>
+                     </div>
+
+                     <div class="skills__data">
+                         <div class="skills__titles">
+                             <h2 class="skills__name">NodeJS</h2>
+                             <span class="skills__number">60%</span>
+                         </div>
+                         <div class="skills__bar">
+                             <span class="skills__percentage skills__angular"></span>
+                         </div>
+                     </div>
+                 </div> -->
+
+                </div>
+            </div>
+            <div class="skills__content skills__open">
+                <div class="skills__header">
+                    <i class="uil uil-brackets-curly skills__icon"></i>
+                    <div>
+                        <h1 class="skills__title">Frontend developer</h1>
+                        <span class="skills__subtitle">
+                                <span id="Frontend-skills__subtitle-txt">
+                                </span>
+                            </span>
+                    </div>
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">HTML 5</h2>
+                            <span class="skills__number">95%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__95"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">CSS 3</h2>
+                            <span class="skills__number">90%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__90"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">TypeScript</h2>
+                            <span class="skills__number">80%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__80"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">React</h2>
+                            <span class="skills__number">80%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__80"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Angular</h2>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__60"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skills__content skills__close">
+                <div class="skills__header">
+                    <i class="uil uil-server skills__icon"></i>
+                    <div>
+                        <h1 class="skills__title">Backend developer</h1>
+                        <span class="skills__subtitle">
+                                <span id="Backend-skills__subtitle-txt">
+                                </span>
+                            </span>
+                    </div>
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">PHP</h2>
+                            <span class="skills__number">95%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__95"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">SQL</h2>
+                            <span class="skills__number">95%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__95"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Java</h2>
+                            <span class="skills__number">95%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__95"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">C#</h2>
+                            <span class="skills__number">90%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__90"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">NodeJS</h2>
+                            <span class="skills__number">60%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__60"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skills__content skills__close">
+                <div class="skills__header">
+                    <i class="uil uil-sitemap skills__icon"></i>
+                    <div>
+                        <h1 class="skills__title">Software Architecture</h1>
+                        <span class="skills__subtitle">
+                                <span id="SW-skills__subtitle-txt">
+                                </span>
+                            </span>
+
+
+                    </div>
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Azure</h2>
+                            <span class="skills__number">80%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__80"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">DevOps</h2>
+                            <span class="skills__number">80%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__80"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Docker</h2>
+                            <span class="skills__number">75%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__75"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h2 class="skills__name">Kubernetes</h2>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div class="skills__data">
+                         <div class="skills__titles">
+                             <h2 class="skills__name"></h2>
+                             <span class="skills__number">90%</span>
+                         </div>
+                         <div class="skills__bar">
+                             <span class="skills__percentage skills__css"></span>
+                         </div>
+                     </div>
+
+
+                      -->
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification section" id="qualification">
+        <h2 class="section__title">
+                <span id="qualification-section__title-txt">
+                </span>
+        </h2>
+
+        <span class="section__subtitle">
+                <span id="qualification-section__subtitle-txt">
+
+                </span>
+            </span>
+        <div class="qualification__container container">
+            <div class="qualification__tabs">
+                <div class="qualification__button button--flex qualification__active" data-target="#education">
+                    <i class="uil uil-graduation-cap qualification__icon"></i>
+                    <span id="qualification-education-button-txt">
+                        </span>
+                </div>
+
+                <div class="qualification__button button--flex" data-target="#work">
+                    <i class="uil uil-briefcase-alt qualification__icon"></i>
+                    <span id="qualification-work-button-txt">
+                        </span>
+                </div>
+
+                <!--<div class="qualification__button button--flex" data-target="#publishing">
+                    <i class="uil uil-book qualification__icon"></i>
+                    <span id="qualification-publishing-button-txt">
+                        </span>
+                </div> -->
+            </div>
+            <div class="qualification__sections">
+
+                <div class="qualification__content qualification__active" data-content id="education">
+                    <div class="qualification__data">
+                        <div>
+                            <h2 class="qualification__title">Information Technology</h2>
+                            <span class="qualification__subtitle">Asti - ITIS</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2013 - 2018
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                        <div>
+                            <h2 class="qualification__title">B1 Preliminary English</h2>
+                            <span class="qualification__subtitle">British schools</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2018
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="qualification__data">
+                        <div>
+                            <h2 class="qualification__title">Computer science
+                                <a class="active-link" onclick="openModal('Info Uni 3')"><i
+                                        class="uil uil-info-circle"></i></a></h2>
+                            <span class="qualification__subtitle__no__margin">UniTO - 109</span>
+                            <span class="qualification__subtitle active-link">
+                                <i class="uil uil-link"></i>
+                                <a class="active-link" id="qualification-education-link-thesis-txt" target="_blank"
+                                   href="pdf/Tesi-Triennale.pdf"></a>
+                            </span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2018 - 2021
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                        </div>
+                        <div>
+                            <h2 class="qualification__title">Artificial intelligence
+                                <a class="active-link" onclick="openModal('Info Uni 5')"><i
+                                        class="uil uil-info-circle"></i></a></h2>
+                            <span class="qualification__subtitle__no__margin">UniTO - 110 e Lode</span>
+                            <span class="qualification__subtitle active-link">
+                                <i class="uil uil-link"></i>
+                                <a class="active-link" id="qualification-education-link-master-thesis-txt" target="_blank"
+                                   href="pdf/Tesi-Magistrale.pdf"></a>
+                            </span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021 - 2023
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="qualification__content" data-content id="publishing">
+                    <div class="qualification__data">
+                        <div>
+                            <h2 class="qualification__title">Reti di Elaboratori</h2>
+                            <span class="qualification__subtitle active-link">
+                                <i class="uil uil-link"></i>
+                                <a class="active-link" id="qualification-publishing-link-1-txt" href="#"></a>
+                            </span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2022
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qualification__content" data-content id="work">
+
+
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                        <div>
+                            <h2 class="qualification__title">Software developer</h2>
+                            <span class="qualification__subtitle">Asti - CO D.E.</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020 - 2021
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="qualification__data">
+                        <div>
+                            <h2 class="qualification__title">Full stack developer</h2>
+                            <span class="qualification__subtitle">Asti - ABC Labs</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2019 - 2023
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span> -->
+                        </div>
+                        <div>
+                            <h2 class="qualification__title">AI & BI developer
+                                <!--<a class="active-link" onclick="openModal('Info Reply')">
+                                    <i class="uil uil-info-circle"></i>
+                                </a> -->
+                            </h2>
+                            <span class="qualification__subtitle">Torino - Reply S.P.A.</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021 - Today
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="qualification__data">
+                         <div>
+                             <h2 class="qualification__title"></h2>
+                             <span class="qualification__subtitle"></span>
+                             <div class="qualification__calendar">
+                                 <i class="uil uil-calendar-alt"></i>
+                                 2023 -
+                             </div>
+                         </div>
+                         <div>
+                             <span class="qualification__rounder"></span>
+                             <span class="qualification__line"></span>
+                         </div>
+                     </div>-->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section" id="portfolio">
+
+        <h2 class="section__title">
+            <span id="portfolio-section__title-txt"></span>
+        </h2>
+
+        <span class="section__subtitle">
+                <span id="portfolio-section__subtitle-txt"></span>
+            </span>
+
+        <div class="portfolio__container container swiper-container">
+
+            <div class="swiper-wrapper">
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/abclabs.png" alt="" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <h2 id="abclabs-portfolio__title-txt" class="portfolio__title"></h2>
+                        <p id="abclabs-portfolio__description-txt" class="portfolio__description"></p>
+                        <a href="https://abclabs.it" target="blank"
+                           class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/abclabs-panel.png" alt="" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <h2 id="abclabs-dashboard-portfolio__title-txt" class="portfolio__title"></h2>
+                        <p id="abclabs-dashboard-portfolio__description-txt" class="portfolio__description"></p>
+                        <a href="https://abclabs.it" target="blank"
+                           class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/Visual-Algorithm.gif" alt="" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <h2 id="visual-algo-portfolio__title-txt" class="portfolio__title"></h2>
+                        <p id="visual-algo-portfolio__description-txt" class="portfolio__description"></p>
+                        <a href="https://albertocampini.github.io/Visual-Algorithm/" target="blank"
+                           class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/prolog.gif" alt="" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <h2 id="prolog-portfolio__title-txt" class="portfolio__title"></h2>
+                        <p id="prolog-portfolio__description-txt" class="portfolio__description"></p>
+                        <a href="https://github.com/AlbertoCampini/IALAB/tree/main/Prolog/Progetto" target="blank"
+                           class="button button--flex button--small portfolio__button">
+                            Info
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/MMSD.gif" alt="" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <h2 id="mmsd-portfolio__title-txt" class="portfolio__title"></h2>
+                        <p id="mmsd-portfolio__description-txt" class="portfolio__description"></p>
+                        <a href="pdf/MMSD_2022.pdf" target="blank"
+                           class="button button--flex button--small portfolio__button">
+                            Info
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid__vertical swiper-slide">
+                    <img src="img/Falappy-bird.gif" alt="" class="portfolio__img__vertical">
+                    <div class="portfolio__data">
+                        <h2 id="flappy-portfolio__title-txt" class="portfolio__title"></h2>
+                        <p id="flappy-portfolio__description-txt" class="portfolio__description"></p>
+                        <a href="https://albertocampini.github.io/Flappy-Bird/" target="blank"
+                           class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid__vertical swiper-slide">
+                    <img src="img/OC.png" alt="" class="portfolio__img__vertical">
+                    <div class="portfolio__data">
+                        <h2 id="OC-portfolio__title-txt" class="portfolio__title"></h2>
+                        <p id="OC-portfolio__description-txt" class="portfolio__description"></p>
+                        <a href="pdf/OC_2023.pdf" target="blank"
+                           class="button button--flex button--small portfolio__button">
+                            Info
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--  <div class="portfolio__content grid swiper-slide">
+                      <img src="img/MMSD.gif" alt="" class="portfolio__img">
+                      <div class="portfolio__data">
+                          <h2 id="reminder-portfolio__title-txt" class="portfolio__title"></h2>
+                          <p id="reminder-portfolio__description-txt" class="portfolio__description"></p>
+                          <a href="pdf/MMSD_2022.pdf" target="blank"
+                             class="button button--flex button--small portfolio__button">
+                              Info
+                              <i class="uil uil-arrow-right button__icon"></i>
+                          </a>
+                      </div>
+                  </div> -->
+
+
+            </div>
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+
+    <div class="modal__container" id="modal-container">
+        <div class="modal__content">
+            <div class="modal__close close-modal" title="Close">
+                <i class='bx bx-x'></i>
+            </div>
+
+            <div id="modal__content__Term">
+                <h1 id="modal__Term__title-txt" class="modal__title"></h1>
+                <p id="modal__Term__description-txt" class="modal__description"></p>
+            </div>
+
+            <div id="modal__content__about__uni__3">
+                <h2 id="modal__content__about__uni__3__title-txt" class="modal__title">L-31</h2>
+                <ul id="modal__content__about__uni__3__description-txt" class="modal__description">
+                    <li>Programmazione I</li>
+                    <li>Matematica dicreta e Logica</li>
+                    <li>Analisi</li>
+                    <li>Ricerca operativa</li>
+                    <li>Architettura degli elaboratori</li>
+                    <li>Programmazione II</li>
+                    <li>Sistemi Operativi</li>
+                    <li>Linguaggi formali e traduttori</li>
+                    <li>Probabilità e statistica</li>
+                    <li>Algoritmi e strutture dati</li>
+                    <li>Fisica</li>
+                    <li>Database</li>
+                    <li>Economia</li>
+                    <li>Diritto</li>
+                    <li>Programmazione III</li>
+                    <li>Linguaggi e pradigmi di programmazione</li>
+                    <li>Reti di elaboratori</li>
+                    <li>Tecnologie Web</li>
+                    <li>Sviluppo applicazioni software</li>
+                    <li>Sicurezza</li>
+
+                </ul>
+            </div>
+
+            <div id="modal__content__about__uni__5">
+                <h2 id="modal__content__about__uni__5__title-txt" class="modal__title">LM-18</h2>
+                <ul id="modal__content__about__uni__5__description-txt" class="modal__description">
+                    <li>Itelligenza Artificaile e Laboratorio</li>
+                    <li>Archietture avanzate sviluppo software</li>
+                    <li>Natural language process</li>
+                    <li>Reti Neurali e Deep learning</li>
+                    <li>Agenti intelligenti</li>
+                    <li>Sistemi intelligenti</li>
+                    <li>Apprendimento automatico</li>
+                    <li>Semantic Web</li>
+                    <li>Ottimizzazione combinatorica</li>
+                    <li>Etica Società e Privacy</li>
+                    <li>Modelli a supporto delle decisioni</li>
+                    <li>Economia</li>
+                </ul>
+            </div>
+
+            <div id="modal__content__about">
+                <h1 id="modal__about__title-txt" class="modal__title"></h1>
+                <p id="modal__about__description-txt" class="modal__description"></p>
+            </div>
+
+
+            <i class="uil uil-times modal__icon__close close-modal"></i>
+            <div class="modal__sticky__close">
+                <i class="uil uil-times nav__close nav__close__sticky nav__icon close-modal"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contactme">
+        <h2 class="section__title">
+                <span id="contactme-section__title-txt">
+                </span>
+        </h2>
+
+        <span class="section__subtitle">
+                <span id="contactme-section__subtitle-txt">
+
+                </span>
+            </span>
+        <div class="container contact__container grid">
+            <div>
+                <!--<div class="contact__information">
+                    <i class="uil uil-phone contact__icon"></i>
+                    <div>
+                        <h2 class="contact__title">
+                                <span id="contactme-call-section__title-txt">
+                                </span>
+                        </h2>
+                        <span class="contact__subtitle"></span>
+                    </div>
+                </div>-->
+                <div class="contact__information">
+                    <i class="uil uil-telegram-alt contact__icon"></i>
+                    <div>
+                        <h2 class="contact__title">
+                            <span id="contactme-telegram-section__title-txt">Telegram</span>
+                        </h2>
+                        <a id="" href="https://t.me/AlbVx" class="contact__subtitle">@AlbVx</a>
+                    </div>
+                </div>
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+                    <div>
+                        <h2 class="contact__title">
+                                <span id="contactme-email-section__title-txt">
+                                </span>
+                        </h2>
+                        <span class="contact__subtitle">campinialberto@gmail.com</span>
+                    </div>
+                </div>
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
+                    <div>
+                        <h2 class="contact__title">
+                            <span id="contactme-location-section__title-txt"></span>
+                        </h2>
+                        <span id="contactme-location-section__subtitle-txt" class="contact__subtitle"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="" class="contact__form grid">
+                <div class="contact__inputs grid">
+                    <div class="contact__content">
+                        <label for="name" id="name-contact__label-txt" class="contact__label"></label>
+                        <input id="name" type="text" class="contact__input" required>
+                    </div>
+                    <div class="contact__content">
+                        <label for="surname" id="surname-contact__label-txt" class="contact__label"></label>
+                        <input id="surname" type="text" class="contact__input" required>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <label for="email" id="email-contact__label-txt" class="contact__label"></label>
+                    <input id="email" type="email" class="contact__input" required>
+                </div>
+                <div class="contact__content">
+                    <label for="message" id="message-contact__label-txt" class="contact__label"></label>
+                    <textarea id="message" cols="0" rows="7" class="contact__input" required></textarea>
+                </div>
+
+                <label class="container-check-box">
+                    Accetto <a class="contact__link" onclick="openModal('Term')" id="open-modal"></a>
+                    <input id="check" type="checkbox" class="contact__input">
+                    <span class="checkmark"></span>
+                </label>
+
+
+                <div class="contact__inputs grid">
+
+                    <div>
+                        <a onclick="submitMessage()" class="button contact__button button--flex">
+                            <span id="contactme-button-txt"></span>
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <span id="outputMessage"></span>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+</main>
+
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+    <div class="footer__bg">
+        <div class="footer__container container grid">
+            <div>
+                <h1 id="footer-name" class="footer__title">Alberto</h1>
+                <span class="footer__subtitle" id="footer-subtitle-text"></span>
+            </div>
+            <ul class="footer__links">
+                <li>
+                    <a id="footer-link-portfolio-txt" href="#portfolio" class="footer__link"></a>
+                </li>
+                <li>
+                    <a id="footer-link-contactme-txt" href="#contactme" class="footer__link"></a>
+
+                </li>
+                <li>
+                    <a id="footer-link-skills-txt" href="#skills" class="footer__link"></a>
+
+                </li>
+
+            </ul>
+            <div class="footer__socials">
+
+                <a href="#" target="_blank" rel="noopener" class="footer__social">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a href="https://twitter.com/AlbVx_" rel="noopener" target="_blank" class="footer__social">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/albvx/" rel="noopener" target="_blank" class="footer__social">
+                    <i class="uil uil-instagram"></i>
+                </a>
+                <a href="https://github.com/AlbertoCampini" rel="noopener" target="_blank"
+                   class="footer__social">
+                    <i class="uil uil-github"></i>
+                </a>
+
+
+            </div>
+        </div>
+        <p id="footer-copy" class="footer__copy"></p>
+    </div>
+
+</footer>
+
+<!--==================== SCROLL TOP ====================-->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
+
+<!--==================== SWIPER JS ====================-->
+<script src="js/swiper-bundle.min.js"></script>
+
+
+<!--=================== JQUERY ===================-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--================= TOASTY =================-->
+<script src="js/toasty.min.js"></script>
+
+<!--================= SCROLL REVEAL =================-->
+<script src="js/scrollreveal.min.js"></script>
+
+<!--=================== MAIN JS ===================-->
+<script src="js/language.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="https://kit.fontawesome.com/136650a7b5.js" crossorigin="anonymous"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136218032-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136218032-1');
+</script>
+
+</body>
+
+</html>
