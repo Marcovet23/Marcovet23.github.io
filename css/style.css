@@ -170,7 +170,7 @@ img {
     gap: 1.5rem;
 }
 
-.grid__vertical{
+.grid__vertical {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -227,18 +227,19 @@ img {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: var(--input-color);;
+    background-color: var(--input-color);
+    ;
 }
 
 /* On mouse-over, add a grey background color */
-.custom-container-check-box:hover input ~ .checkmark,
-.container-check-box:hover input ~ .checkmark {
+.custom-container-check-box:hover input~.checkmark,
+.container-check-box:hover input~.checkmark {
     background-color: var(--first-color-ligther);
 }
 
 /* When the checkbox is checked, add a blue background */
-.custom-container-check-box input:checked ~ .checkmark,
-.container-check-box input:checked ~ .checkmark {
+.custom-container-check-box input:checked~.checkmark,
+.container-check-box input:checked~.checkmark {
     background-color: var(--first-color);
 }
 
@@ -250,8 +251,8 @@ img {
 }
 
 /* Show the checkmark when checked */
-.custom-container-check-box input:checked ~ .checkmark:after,
-.container-check-box input:checked ~ .checkmark:after {
+.custom-container-check-box input:checked~.checkmark:after,
+.container-check-box input:checked~.checkmark:after {
     display: block;
 }
 
@@ -262,7 +263,8 @@ img {
     top: 2px;
     width: 7px;
     height: 15px;
-    border: solid var(--input-color);;
+    border: solid var(--input-color);
+    ;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -304,7 +306,8 @@ img {
     width: 100%;
     height: 13px;
     border-radius: .5em;
-    background: var(--first-color-ligther);;
+    background: var(--first-color-ligther);
+    ;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -335,6 +338,7 @@ img {
 
 
 @media screen and (max-width: 767px) {
+
     .nav__menu,
     .nav__menu-color {
         bottom: -100%;
@@ -706,7 +710,7 @@ img {
 
 .qualification__data {
     display: grid;
-    grid-template-columns:  1fr max-content 1fr;
+    grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
 }
 
@@ -759,11 +763,12 @@ img {
     color: var(--first-color);
 }
 
-.nav__close__sticky{
+.nav__close__sticky {
     right: -0.7rem;
     bottom: -1.5rem;
 }
-.modal__sticky__close{
+
+.modal__sticky__close {
     bottom: 0;
     left: 0;
     position: sticky;
@@ -1143,13 +1148,14 @@ img {
 
 /* For small devices */
 @media screen and (max-width: 500px) {
+
     #qualification-education-button-txt,
     #qualification-work-button-txt,
     #qualification-publishing-button-txt {
         font-size: var(--small-font-size);
     }
 
-    .grid__vertical{
+    .grid__vertical {
         grid-template-columns: none;
     }
 
@@ -1206,7 +1212,8 @@ img {
     .project__img {
         width: 200px;
     }
-    .grid__vertical{
+
+    .grid__vertical {
         grid-template-columns: none;
     }
 
@@ -1382,7 +1389,7 @@ img {
     }
 
     .portfolio__img__vertical {
-        width:  180px;
+        width: 180px;
     }
 
 
@@ -1413,7 +1420,7 @@ img {
     }
 
     .footer__container {
-        grid-template-columns:repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .footer__bg {
@@ -1473,7 +1480,7 @@ img {
         right: -3.5rem;
     }
 
-    .swiper-container-horizontal > .swiper-pagination-bullets {
+    .swiper-container-horizontal>.swiper-pagination-bullets {
         bottom: -4.5rem;
     }
 
